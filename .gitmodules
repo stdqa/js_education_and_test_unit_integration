@@ -1,0 +1,3 @@
+[submodule "js-testing-introduction"]
+	path = js-testing-introduction
+	url = https://github.com/stdqa/js-testing-introduction.git
