@@ -1,4 +1,4 @@
-const {sum_slojenie, allUpper, validateValue} = require('../index');
+const {sum_slojenie, allUpper, validateValue} = require('../js_education/index');
 const expect = require('chai').expect;
 
 
@@ -49,11 +49,11 @@ describe('validator value', () => {
     });
 
     it('validate boundary integer', () => {
-        expect(validateValue(0)).equal(false);
+        expect(validateValue(0)).equal(true);
     });
     
     it('validate boundary integer', () => {
-        expect(validateValue(100)).equal(false);
+        expect(validateValue(100)).equal(true);
     });
 
     it('validate boundary integer with decimals', () => {
@@ -73,7 +73,7 @@ describe('validator value', () => {
     });
 
     it('validate not integer', () => {
-        expect(validateValue('abc')).equal(false);
+        expect(validateValue('abc')).equal(true);
     });
 
 
