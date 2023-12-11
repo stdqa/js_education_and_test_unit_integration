@@ -1,4 +1,4 @@
-const { generateText, checkAndGenerate } = require('../simple_app/js-testing-introduction/util');
+const { generateText, checkAndGenerate } = require('../js-testing-introduction/util');
 // unit test
 describe('generate text', () => {
 
